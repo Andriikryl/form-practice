@@ -1,0 +1,19 @@
+.flex__group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-block-end: 20px;
+    padding-block-end: 10px;
+    padding-inline-start: 20px;
+    border-bottom: 2px solid black;
+    border-inline-start: 2px solid darkkhaki;
+}
+
+.error{
+    color: tomato;
+}
+
+.label{
+    text-transform: uppercase;
+    color: cornflowerblue;
+}
