@@ -1,11 +1,24 @@
-import React from "react";
+import React, { RefCallback } from "react";
 import style from "./style.module.css";
+import { RefCallBack } from "react-hook-form";
 
 interface TextFieldProps {
   id?: string;
   label: string;
   error: string;
-  InputProps?: unknown;
+  InputProps?: {
+    onChange?: (ev: any) => unknown;
+    onBlur?: (ev: any) => unknown;
+    ref?: RefCallback<HTMLInputElement>;
+    name?: string;
+    min?: number | string;
+    max?: number | string;
+    maxLength?: number;
+    minLength?: number;
+    pattern?: string;
+    required?: boolean;
+    disabled?: boolean;
+  };
   type?: string;
 }
 
